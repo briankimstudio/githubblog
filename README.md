@@ -12,6 +12,12 @@ Then it shows how to create a Jekyll blog on github.
 
 #### Preparation
 
+##### Install macOS SDK headers on Mojave
+
+```
+open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
+```
+
 ##### Install rvm
 
 ```
@@ -40,11 +46,26 @@ Installing Ruby may take for a while cause it downloads and install many files f
 
 ```
 $ rvm install ruby
-```
+
 Searching for binary rubies, this might take some time.
 No binary rubies available for: osx/10.14/x86_64/ruby-3.0.1.
 Continuing with compilation. Please read 'rvm help mount' to get more information on binary rubies.
 Checking requirements for osx.
 Installing requirements for osx.
 Updating system........./
+```
+
+```
+$ rvm --default use ruby
+$ ruby -v
+ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin18]
+```
+
+##### Install jekyll
+
+https://jekyllrb.com/
+
+```
+$ gem install bundler jekyll
+$ gem install jekyll -- --with-cppflags=-I/usr/local/opt/openssl/include
 ```
