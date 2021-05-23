@@ -15,7 +15,7 @@ Then it shows how to create a Jekyll blog on github.
 ##### Install rvm
 
 ```
-\curl -sSL https://get.rvm.io | bash
+$ \curl -sSL https://get.rvm.io | bash
 ```
 
 ```
@@ -39,7 +39,7 @@ Please consider donating to our open collective to help us maintain RVM.
 Installing Ruby may take for a while cause it downloads and install many files from Internet.
 
 ```
-rvm install ruby
+$ rvm install ruby
 ```
 Searching for binary rubies, this might take some time.
 No binary rubies available for: osx/10.14/x86_64/ruby-3.0.1.
